@@ -1,0 +1,44 @@
+body {
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+header,
+#sidebar,
+canvas {
+    background-color: #ffffff;
+}
+
+#sidebar p {
+    display: none;
+}
+
+canvas {
+    margin-bottom: 20px;
+}
+
+header input {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+#setting {
+    position: fixed;
+    margin-top: 250px;
+    -webkit-animation: rotation 1s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
